@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 
-x_values = range(1, 5000)
+x_values = [1, 2, 3, 4, 5]
 y_values = [x**3 for x in x_values]
 
 fig, ax = plt.subplots()
@@ -18,6 +18,6 @@ ax.set_ylabel("Cube of Value", fontsize=14)
 
 ax.tick_params(labelsize=14)
 
-ax.axis([0, 128, 0, 128])
+ax.axis([0, 5, 0, 75])
 
 plt.show()
