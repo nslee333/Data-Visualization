@@ -17,6 +17,6 @@ ax.set_ylabel("Cube of Value", fontsize=14)
 
 ax.tick_params(labelsize=14)
 
-ax.axis([0, 1_100_000, 1, 1_100])
+ax.axis([1, 150, 1, 1_250_000])
 
 plt.show()
