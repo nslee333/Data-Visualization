@@ -24,5 +24,14 @@ for eq_dict in all_eq_dicts:
     
 title = 'Global Earthquakes'
 color_red = 'red'
-fig = px.scatter_geo(lat=lats, lon=lons, size=mags, title=title)
+fig = px.scatter_geo(
+    lat=lats, 
+    lon=lons, 
+    size=mags, 
+    title=title,
+    color=mags,
+    color_continuous_scale='Viridis',
+    labels={'color':'Magnitude'},
+    projection='natural earth',
+    )
 fig.show()
