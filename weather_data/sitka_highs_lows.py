@@ -25,10 +25,13 @@ ax.plot(dates, lows, color='blue', alpha=0.5)
 ax.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
 
 # Format plot.
-ax.set_title("Daily high and low temperatures, 2021 for Sitka, AK", fontsize=20)
+title = "Daily high and low temperatures, 2021 for Sitka, AK"
+ax.set_title(title, fontsize=20)
+
 ax.set_xlabel('', fontsize=14)
-fig.autofmt_xdate() 
 ax.set_ylabel("Temperature (F)", fontsize=14)
+
+fig.autofmt_xdate() 
 ax.tick_params(labelsize=14)
 
 plt.show()
